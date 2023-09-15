@@ -1,0 +1,11 @@
+{
+    "name": "guilhermeytalo/atv1",
+    "description": "atividade 1 de backend 2",
+    "authors": [
+        {
+            "name": "Guilherme Ytalo",
+            "email": "gydaytalo@gmail.com"
+        }
+    ],
+    "require": {}
+}
