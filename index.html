@@ -3,31 +3,51 @@
 
 <head>
     <title>Cadastro de Mídia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <h1>Cadastro de Mídia</h1>
-    <form action="" method="post">
-        <label for="tipo">Tipo (CD, DVD, Vinil, K7, etc.):</label>
-        <input type="text" name="tipo" required><br><br>
+    <div class="flex flex-col justify-center items-center h-screen">
+        <div class="text-center">
+            <h1 class="text-2xl font-semibold">Cadastro de Mídia</h1>
+        </div>
+        <form class="mt-4 w-full max-w-md">
+            <div class="mb-4">
+                <label for="tipo" class="block text-gray-700">Tipo (CD, DVD, Vinil, K7, etc.):</label>
+                <input type="text" name="tipo" required class="mt-1 p-2 w-full border rounded">
+            </div>
 
-        <label for="interprete">Nome do Intérprete (Banda, Cantor, etc.):</label>
-        <input type="text" name="interprete" required><br><br>
+            <div class="mb-4">
+                <label for="interprete" class="block text-gray-700">Nome do Intérprete (Banda, Cantor, etc.):</label>
+                <input type="text" name="interprete" required class="mt-1 p-2 w-full border rounded">
+            </div>
 
-        <label for="album">Nome do Álbum:</label>
-        <input type="text" name="album" required><br><br>
+            <div class="mb-4">
+                <label for="album" class="block text-gray-700">Nome do Álbum:</label>
+                <input type="text" name="album" required class="mt-1 p-2 w-full border rounded">
+            </div>
 
-        <label for="data_compra">Data da Compra:</label>
-        <input type="date" name="data_compra" required><br><br>
+            <div class="mb-4">
+                <label for="data_compra" class="block text-gray-700">Data da Compra:</label>
+                <input type="date" name="data_compra" required class="mt-1 p-2 w-full border rounded">
+            </div>
 
-        <label for="valor_pago">Valor Pago:</label>
-        <input type="number" name="valor_pago" required><br><br>
+            <div class="mb-4">
+                <label for="valor_pago" class="block text-gray-700">Valor Pago:</label>
+                <input type="number" name="valor_pago" required class="mt-1 p-2 w-full border rounded">
+            </div>
 
-        <label for="observacao">Observação:</label>
-        <textarea name="observacao"></textarea><br><br>
+            <div class="mb-4">
+                <label for="observacao" class="block text-gray-700">Observação:</label>
+                <textarea name="observacao" class="mt-1 p-2 w-full border rounded"></textarea>
+            </div>
 
-        <input type="submit" value="Enviar">
-    </form>
+            <div class="mb-4">
+                <input type="submit" value="Enviar"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
